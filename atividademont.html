@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./Assets/Styles/style.css">
+        <title>Panela Caseira</title>
+ 
+        
+    </head>
+    <body>
+        <div id="fundo"><img src="https://i.pinimg.com/564x/3e/f5/db/3ef5dbd52ca17c853b090d60a0d386d9.jpg" id="mmg">
+            <h1>Panela Caseira</h1>
+        </div>
+        
+        <div id="principal" class="container">
+
+            <p id="tit">Temos deliciosas receitas abaixo, escolha qualquer uma delas e aprenda a fazer diretamente da sua casa</p>
+
+            <select name="topicos" id="opcoes" onchange="selecao()">
+                <option value="0">Escolha uma opção</option>
+                <option value="1">Strogonoff</option>
+                <option value="2">Lasanha</option>
+                <option value="3">Bolo de chocolate</option>
+                <option value="4">Macarronese</option>
+                
+8
+            </select>
+            <p></p>
+            
+            <textarea id="caixatxt" name="descricao" title="descrição" placeholder="">Escolha uma das das receitas acima.</textarea>
+
+            <script>
+
+                function selecao() {
+
+                var select = document.getElementById("opcoes");
+                
+                var textarea = document.getElementById("caixatxt");
+            
+            switch(select.value) {
+             
+                case "1":
+                textarea.textContent = "Ingredientes:\n\n- 500g de carne (filé mignon, frango ou camarão)\n- 1 cebola picada\n- 2 dentes de alho picados\n- 1 lata de creme de leite\n- 3 colheres (sopa) de ketchup\n- 2 colheres (sopa) de mostarda\n- Sal e pimenta a gosto\n- Óleo para refogar\n\n° Modo de Preparo:\n\n- Em uma panela, refogue a cebola e o alho no óleo. Adicione a carne e doure bem. Tempere com sal e pimenta. Acrescente o ketchup e a mostarda, misture bem. Por último, adicione o creme de leite e aqueça sem deixar ferver. Sirva com arroz branco e batata palha.";
+                break;
+                case "2":
+                textarea.textContent = "Ingredientes:\n\n- 500g de massa de lasanha\n- 500g de peito de frango cozido e desfiado\n- 1 lata de molho de tomate\n- 1 lata de creme de leite\n- 200g de queijo mussarela fatiado\n- 100g de queijo parmesão ralado\n\n° Modo de Preparo:\n\n- Misture o frango desfiado com o molho de tomate e o creme de leite. Em um refratário, faça camadas alternadas de massa, molho e queijo. Repita até acabarem os ingredientes, terminando com queijo por cima. Asse em forno preaquecido a 180°C por 30 minutos.";
+                break;
+                case "3":
+                textarea.textContent = "Ingredientes:\n\n- 2 xícaras de farinha de trigo\n- 1 xícara de açúcar\n- 1/2 xícara de chocolate em pó\n- 1 xícara de leite\n- 1/2 xícara de óleo\n- 2 ovos\n- 1 colher (sopa) de fermento em pó\n\n° Modo de Preparo:\n\n- Misture todos os ingredientes secos. Adicione os ingredientes líquidos e misture bem. Por último, adicione o fermento e misture delicadamente. Asse em forno preaquecido a 180°C por aproximadamente 40 minutos.";
+                break;
+                case "4":
+                textarea.textContent = "Ingredientes:\n\n- 500g de macarrão parafuso\n- 1 lata de milho verde\n- 1 lata de ervilha\n- 1 cenoura ralada\n- 1/2 pimentão vermelho picado\n- Maionese a gosto\n- Sal e pimenta a gosto\n\n° Modo de Preparo:\n\n- Cozinhe o macarrão conforme as instruções da embalagem. Escorra e deixe esfriar. Em uma tigela grande, misture o macarrão com o milho, a ervilha, a cenoura e o pimentão. Tempere com sal e pimenta. Adicione maionese aos poucos até obter a consistência desejada. Leve à geladeira por pelo menos 1 hora antes de servir.";
+                break;
+                default:
+                textarea.textContent = "";
+
+            }
+        }             
+                        </script>
+
+        
+        </div>/
+    </body>
+</html>
